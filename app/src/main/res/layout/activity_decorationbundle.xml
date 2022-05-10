@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firestore_decorations"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".DecorationbundleActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/decorations_list"
+        android:layout_width="409dp"
+        android:layout_height="648dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="223dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="9dp"
+        android:onClick="selectInstallTime"
+        android:text="@string/schedule_installation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bundleCostTextView"
+        app:layout_constraintTop_toBottomOf="@+id/decorations_list" />
+
+    <TextView
+        android:id="@+id/bundleCostTextView"
+        android:layout_width="130dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="12dp"
+        android:elegantTextHeight="true"
+        android:text="@string/string_bundle_cost"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button9" />
+
+</RelativeLayout>

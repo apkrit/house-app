@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/enterpayment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterpaymentActivity">
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="totalTextView"
+        app:layout_constraintBottom_toTopOf="@+id/eventdateTextView"
+        app:layout_constraintEnd_toEndOf="@+id/paymentRecyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/eventdateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="eventdateTextView"
+        app:layout_constraintBottom_toTopOf="@+id/divider5"
+        app:layout_constraintEnd_toEndOf="@+id/totalTextView"
+        app:layout_constraintTop_toBottomOf="@+id/totalTextView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Details"
+        app:layout_constraintBottom_toTopOf="@+id/divider4"
+        app:layout_constraintStart_toStartOf="@+id/paymentRecyclerView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/paymentRecyclerView"
+        android:layout_width="379dp"
+        android:layout_height="239dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/totalTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentRecyclerView" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventdateTextView" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/paymentRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="openPaymentWindow"
+        android:text="Click to Pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Address of Home"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextStreet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+    <EditText
+        android:id="@+id/editTextTextStreet"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="Street"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:nextFocusLeft="@id/editTextTextCity"
+        android:nextFocusRight="@id/editTextTextCity"
+        android:nextFocusDown="@id/editTextTextCity"
+        android:nextFocusForward="@id/editTextTextCity"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextState"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextCity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/editTextTextCity"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="@string/address_label_city"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:nextFocusLeft="@id/editTextTextState"
+        android:nextFocusRight="@id/editTextTextState"
+        android:nextFocusDown="@id/editTextTextState"
+        android:nextFocusForward="@id/editTextTextState"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextZip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextStreet"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/editTextTextState"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/address_label_state"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:nextFocusLeft="@id/editTextTextZip"
+        android:nextFocusRight="@id/editTextTextZip"
+        android:nextFocusDown="@id/editTextTextZip"
+        android:nextFocusForward="@id/editTextTextZip"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/payButton"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextZip"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextStreet" />
+
+    <EditText
+        android:id="@+id/editTextTextZip"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Zip Code"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:nextFocusLeft="@id/payButton"
+        android:nextFocusRight="@id/payButton"
+        android:nextFocusDown="@id/payButton"
+        android:nextFocusForward="@id/payButton"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/payButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextState"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextCity" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Total:"
+        app:layout_constraintBottom_toBottomOf="@+id/totalTextView"
+        app:layout_constraintEnd_toStartOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/totalTextView"
+        app:layout_constraintVertical_bias="0.627" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Install Date:"
+        app:layout_constraintBottom_toBottomOf="@+id/eventdateTextView"
+        app:layout_constraintEnd_toStartOf="@+id/eventdateTextView"
+        app:layout_constraintTop_toTopOf="@+id/eventdateTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

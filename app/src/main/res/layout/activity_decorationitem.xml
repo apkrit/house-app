@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/decorationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decoration_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/decorationPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decoration_price"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/decorationName" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="261dp"
+        android:layout_height="202dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decorationPrice"
+        app:srcCompat="@drawable/dimg_0002" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/decorationCurrNumAndPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.987" />
+
+    <TextView
+        android:id="@+id/decorationCurrNumAndPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalitemsandprice"
+        app:layout_constraintBottom_toTopOf="@+id/minusButton"
+        app:layout_constraintEnd_toEndOf="@+id/minusButton"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/plusButton" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decorationName" />
+
+    <TextView
+        android:id="@+id/itemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decoration_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="/month"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/decorationPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

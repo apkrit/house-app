@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createacct_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateaccountActivity">
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/lastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/newUserPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/clickToCreateAcctButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserPassword1" />
+
+    <EditText
+        android:id="@+id/newUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/newUserPassword1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserZip" />
+
+    <EditText
+        android:id="@+id/newUserPassword1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Choose Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/newUserPassword2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserEmail" />
+
+    <EditText
+        android:id="@+id/newUserZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/address_label_zip_code"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/newUserEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/newUserZip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
+
+    <Button
+        android:id="@+id/clickToCreateAcctButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="registerNewAccount"
+        android:text="@string/createAccount_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserPassword2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

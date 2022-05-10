@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="04/01/2022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/dateCheckBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateCheckBox" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5:00PM"
+        app:layout_constraintBottom_toBottomOf="@+id/dateCheckBox"
+        app:layout_constraintEnd_toStartOf="@+id/dateCheckBox"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dayofweekTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/dateCheckBox"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:checked="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dayofweekTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuesday"
+        app:layout_constraintBottom_toBottomOf="@+id/timeTextView"
+        app:layout_constraintEnd_toStartOf="@+id/timeTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dateTextView"
+        app:layout_constraintTop_toTopOf="@+id/timeTextView" />
+
+    <TextView
+        android:id="@+id/yearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="year"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="130dp"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="day"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="162dp"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/monthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Month"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="222dp"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

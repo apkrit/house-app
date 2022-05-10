@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HouseDecorators</string>
+    <string name="username_prompt">Enter Username</string>
+    <string name="password_prompt">Enter Password</string>
+    <string name="login_prompt">Login</string>
+    <string name="createAccount_prompt">Create Account</string>
+    <string name="logo_description">picture of logo</string>
+    <string name="return_to_login_screen">Return to login screen.</string>
+    <string name="welcome_account_successfully_created">Welcome! Account successfully created!</string>
+    <string name="image_of_decoration">image of decoration</string>
+    <string name="string_image_of_decoration">image of decoration</string>
+    <string name="string_string_image_of_decoration">image of decoration</string>
+    <string name="string_bundle_cost">$0.00</string>
+    <string name="schedule_installation">Schedule Installation</string>
+    <string name="decoration_name">Decoration Name</string>
+    <string name="decoration_price">Decoration Price</string>
+    <string name="decoration_imgurl">Decoration Image</string>
+    <string name="decoration_description">Decoration Description</string>
+    <string name="totalitemsandprice">(x0) $0.00</string>
+    <string name="googlepay_status_unavailable">Google Play Is Not Available</string>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="353dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/logo_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/house_logo" />
+
+    <Button
+        android:id="@+id/createAccountButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="createAccountView"
+        android:text="@string/createAccount_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="username"
+        android:ems="10"
+        android:hint="@string/username_prompt"
+        android:importantForAutofill="yes"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:nextFocusRight="@id/editTextTextPassword"
+        android:nextFocusDown="@id/editTextTextPassword"
+        android:nextFocusForward="@id/editTextTextPassword"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/password_prompt"
+        android:importantForAutofill="yes"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="loginUser"
+        android:text="@string/login_prompt"
+        app:layout_constraintBottom_toTopOf="@+id/createAccountButtonID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/userzipTextPostalAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Zip Code"
+        android:inputType="textPostalAddress"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guestInstructionsTextView" />
+
+    <TextView
+        android:id="@+id/guestInstructionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Enter zip code or login to continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/guestLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="guestBundleView"
+        android:text="Continue as Guest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userzipTextPostalAddress" />
+</androidx.constraintlayout.widget.ConstraintLayout>

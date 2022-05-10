@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/schedule_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleinstallationActivity">
+
+    <Button
+        android:id="@+id/toPaymentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enterPaymentInfo"
+        android:text="Review + Pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_list"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="409dp"
+        android:layout_height="335dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleInstructionsTitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/schedule_list"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <TextView
+        android:id="@+id/scheduleInstructionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select a date to see available installation times."
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userDateSelectionTextView"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="No Date Selected"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/toPaymentButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_list" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

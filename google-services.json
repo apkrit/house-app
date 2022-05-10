@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "630105584920",
+    "project_id": "ezpz-729e2",
+    "storage_bucket": "ezpz-729e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630105584920:android:8389fad90f17b83ad39a6d",
+        "android_client_info": {
+          "package_name": "com.EZPZ.housedecorators"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630105584920-43ppn5qvdhba7e6pj9n5h61663lq9k7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDratR6mJrz_0DQihvgmfYB0MfZnULizC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630105584920-43ppn5qvdhba7e6pj9n5h61663lq9k7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630105584920:android:7f6599f0a8b9b354d39a6d",
+        "android_client_info": {
+          "package_name": "com.houseapp.ezpz_house_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630105584920-43ppn5qvdhba7e6pj9n5h61663lq9k7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDratR6mJrz_0DQihvgmfYB0MfZnULizC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630105584920-43ppn5qvdhba7e6pj9n5h61663lq9k7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
